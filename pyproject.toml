@@ -1,0 +1,34 @@
+[project]
+name = "framepack"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate==1.6.0",
+    "diffusers==0.33.1",
+    "transformers==4.46.2",
+    "gradio==5.23.0",
+    "sentencepiece==0.2.0",
+    "pillow==11.1.0",
+    "av==12.1.0",
+    "numpy==1.26.2",
+    "scipy==1.12.0",
+    "requests==2.31.0",
+    "torchsde==0.2.6",
+    "einops",
+    "opencv-contrib-python",
+    "safetensors",
+    # "torch==2.6.0+cu126; sys_platform == 'linux'",
+    # "torch==2.6.0; sys_platform == 'darwin'",
+    # "torchvision==0.21.0+cu126; sys_platform == 'linux'",
+    # "torchvision==0.21.0; sys_platform == 'darwin'",
+    # "torchaudio==2.6.0+cu126; sys_platform == 'linux'",
+    # "torchaudio==2.6.0; sys_platform == 'darwin'",
+]
+
+[tool.uv]
+find-links = [
+    "https://download.pytorch.org/whl/cu126/torch",
+    "https://download.pytorch.org/whl/cu126/torchvision",
+]
